@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Burger Machine</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="index.html"><img class="logo" src="data:image/png;base64,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" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link active" href="#">Products</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#testimonials">Testimonials</a></li>
+                <li class="nav-item"><a class="nav-link" href="#" onclick="toggleDarkMode()">Dark Mode</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Products Section -->
+<section id="products" class="p-5">
+    <div class="container">
+        <h2 class="text-center">Our Menu!</h2>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <a href="checkout.html">
+                    <div class="product-card">
+                        <img src="https://scontent.fmnl30-1.fna.fbcdn.net/v/t31.18172-8/10704335_10152615295627877_2588412207859765722_o.jpg?stp=c90.0.540.540a_dst-jpg_p180x540&_nc_cat=107&ccb=1-7&_nc_sid=1d70fc&_nc_ohc=YPHIIMtTOkAQ7kNvgFoHvMY&_nc_ht=scontent.fmnl30-1.fna&oh=00_AYCXapOICzbUbkJ0kNoA3feostmsw2owjDIrvQNjvH4Glg&oe=66AA8007" alt="Classic Burger" class="img-fluid">
+                        <div class="product-info">
+                            <h3>Double Longganisa Burger</h3>
+                            <p class="calories">472 kcal</p>
+                            <p>A flavorful burger featuring double servings of longganisa sausage, perfect for a hearty meal.</p>
+                            <p class="price">49 Php</p> 
+                        </div>
+                    </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <a href="checkout.html">
+                    <div class="product-card">
+                        <img src="https://scontent.fmnl30-1.fna.fbcdn.net/v/t31.18172-8/10704335_10152615295627877_2588412207859765722_o.jpg?stp=c90.0.540.540a_dst-jpg_p180x540&_nc_cat=107&ccb=1-7&_nc_sid=1d70fc&_nc_ohc=YPHIIMtTOkAQ7kNvgFoHvMY&_nc_ht=scontent.fmnl30-1.fna&oh=00_AYCXapOICzbUbkJ0kNoA3feostmsw2owjDIrvQNjvH4Glg&oe=66AA8007" alt="Double Burger" class="img-fluid">
+                        <div class="product-info">
+                            <h3>Double Chicken Burger</h3>
+                            <p class="calories">326 kcal</p>
+                            <p>A delicious double-patty chicken burger that's juicy and packed with flavor.</p>
+                            <p class="price">49 Php</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <a href="checkout.html">
+                    <div class="product-card">
+                        <img src="https://scontent.fmnl30-1.fna.fbcdn.net/v/t31.18172-8/10704335_10152615295627877_2588412207859765722_o.jpg?stp=c90.0.540.540a_dst-jpg_p180x540&_nc_cat=107&ccb=1-7&_nc_sid=1d70fc&_nc_ohc=YPHIIMtTOkAQ7kNvgFoHvMY&_nc_ht=scontent.fmnl30-1.fna&oh=00_AYCXapOICzbUbkJ0kNoA3feostmsw2owjDIrvQNjvH4Glg&oe=66AA8007" alt="Green Burger" class="img-fluid">
+                        <div class="product-info">
+                            <h3>Club Burger</h3>
+                            <p class="calories">218 kcal</p>
+                            <p>A classic club burger with a blend of fresh ingredients and savory taste.</p>
+                            <p class="price">55 Php</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <a href="checkout.html">
+                    <div class="product-card">
+                        <img src="https://scontent.fmnl30-1.fna.fbcdn.net/v/t31.18172-8/10704335_10152615295627877_2588412207859765722_o.jpg?stp=c90.0.540.540a_dst-jpg_p180x540&_nc_cat=107&ccb=1-7&_nc_sid=1d70fc&_nc_ohc=YPHIIMtTOkAQ7kNvgFoHvMY&_nc_ht=scontent.fmnl30-1.fna&oh=00_AYCXapOICzbUbkJ0kNoA3feostmsw2owjDIrvQNjvH4Glg&oe=66AA8007" alt="Taj Chili Burger" class="img-fluid">
+                        <div class="product-info">
+                            <h3>Ultimate Double Burger</h3>
+                            <p class="calories">280 kcal</p>
+                            <p>The ultimate burger experience with double patties and maximum flavor.</p>
+                            <p class="price">58 Php</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <a href="checkout.html">
+                    <div class="product-card">
+                        <img src="https://scontent.fmnl30-1.fna.fbcdn.net/v/t31.18172-8/10704335_10152615295627877_2588412207859765722_o.jpg?stp=c90.0.540.540a_dst-jpg_p180x540&_nc_cat=107&ccb=1-7&_nc_sid=1d70fc&_nc_ohc=YPHIIMtTOkAQ7kNvgFoHvMY&_nc_ht=scontent.fmnl30-1.fna&oh=00_AYCXapOICzbUbkJ0kNoA3feostmsw2owjDIrvQNjvH4Glg&oe=66AA8007" alt="Healthy Burger" class="img-fluid">
+                        <div class="product-info">
+                            <h3>BM Classic Burger</h3>
+                            <p class="calories">372 kcal</p>
+                            <p>A traditional burger with a classic taste, perfect for any burger lover.</p>
+                            <p class="price">28 Php</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <a href="checkout.html">
+                    <div class="product-card">
+                        <img src="https://images.yummy.ph/yummy/uploads/2020/09/burger-machine-sansrival-01.jpg" alt="Taj Chili Burger" class="img-fluid">
+                        <div class="product-info">
+                            <h3>Sansrival</h3>
+                            <p class="calories">280 kcal</p>
+                            <p>Our sans rival has a sweet, creamy, and buttery flavor just as what you’d expect from sans rival.</p>
+                            <p class="price">58 Php</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <a href="checkout.html">
+                    <div class="product-card">
+                        <img src="https://scontent.fmnl30-1.fna.fbcdn.net/v/t31.18172-8/10704335_10152615295627877_2588412207859765722_o.jpg?stp=c90.0.540.540a_dst-jpg_p180x540&_nc_cat=107&ccb=1-7&_nc_sid=1d70fc&_nc_ohc=YPHIIMtTOkAQ7kNvgFoHvMY&_nc_ht=scontent.fmnl30-1.fna&oh=00_AYCXapOICzbUbkJ0kNoA3feostmsw2owjDIrvQNjvH4Glg&oe=66AA8007" alt="Taj Chili Burger" class="img-fluid">
+                        <div class="product-info">
+                            <h3>Cheezy Bacon</h3>
+                            <p class="calories">280 kcal</p>
+                            <p>It has cheese. It has bacon. It’s a burger, and it’s buy one, take one!</p>
+                            <p class="price">58 Php</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <a href="checkout.html">
+                    <div class="product-card">
+                        <img src="https://images.yummy.ph/yummy/uploads/2017/05/burgermachineroastbeef.jpg" alt="Taj Chili Burger" class="img-fluid">
+                        <div class="product-info">
+                            <h3>Roast Beef Burger</h3>
+                            <p class="calories">280 kcal</p>
+                            <p>The Classic Roast Beef Burger is one of the simplest items on the menu.</p>
+                            <p class="price">58 Php</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <a href="checkout.html">
+                    <div class="product-card">
+                        <img src="https://www.budgetbytes.com/wp-content/uploads/2022/05/Sunny-Side-Up-Butter-2.jpg" alt="Taj Chili Burger" class="img-fluid">
+                        <div class="product-info">
+                            <h3>Burger Toppings: Egg</h3>
+                            <p class="calories">280 kcal</p>
+                            <p>The perfect topping for any burger, a must add-on for any burger that you choose.</p>
+                            <p>.</p>
+                            <p>.</p>
+                            <p>.</p>
+                            <p class="price">12 Php</p>
+                            
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <a href="checkout.html">
+                    <div class="product-card">
+                        <img src="https://whereismyspoon.co/wp-content/uploads/2023/05/burger-coleslaw.jpg" alt="Taj Chili Burger" class="img-fluid">
+                        <div class="product-info">
+                            <h3>Burger Toppings: Coleslaw</h3>
+                            <p class="calories">280 kcal</p>
+                            <p>For those who want veggies on their burger.</p>
+                            <p class="price">12 Php</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <a href="checkout.html">
+                    <div class="product-card">
+                        <img src="https://cdn.apartmenttherapy.info/image/upload/f_auto,q_auto:eco,c_fill,g_auto,w_1500,ar_3:2/k%2Farchive%2Fad4881c2ec9f21cafb7f5d209c83b6849d6b0d23" alt="Taj Chili Burger" class="img-fluid">
+                        <div class="product-info">
+                            <h3>Burger Toppings: Bacon</h3>
+                            <p class="calories">280 kcal</p>
+                            <p>.</p>
+                            <p>.</p>
+                            <p>.</p>
+                            <p>.</p>
+                            <p>Crispy Bacon to go with your burger.</p>
+                            <p class="price">15 Php</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <a href="checkout.html">
+                    <div class="product-card">
+                        <img src="https://images.yummy.ph/yummy/uploads/2017/05/burgermachinetoppings.jpg" alt="Taj Chili Burger" class="img-fluid">
+                        <div class="product-info">
+                            <h3>and many more...</h3>
+                            <p class="calories">280 kcal</p>
+                            <p>So what you waiting for?.</p>
+                            <p>.</p>
+                            <p>.</p>
+                            <p>.</p>
+                            <p>.</p>
+                            <p>.</p>
+
+                            <p class="price">5 Php</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+</body>
+</html>
